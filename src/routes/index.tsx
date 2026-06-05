@@ -47,10 +47,10 @@ import { cn } from "@/lib/utils";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Sunset Chat — AI Assistant" },
+      { title: "Senja — Glen AI" },
       {
         name: "description",
-        content: "A warm sunset-themed AI chatbot powered by Groq.",
+        content: "You're the best bestie I've ever had.",
       },
     ],
   }),
@@ -287,8 +287,8 @@ function ChatPage() {
               <Sparkles className="h-5 w-5" />
             </div>
             <div className="flex-1">
-              <p className="text-sm font-semibold">Sunset Chat</p>
-              <p className="text-xs text-muted-foreground">Powered by Groq</p>
+              <p className="text-sm font-semibold">Senja UI</p>
+              <p className="text-xs text-muted-foreground">Glen Replacement</p>
             </div>
           </div>
 
@@ -525,10 +525,10 @@ function MessageBubble({ message, onDelete }: { message: ChatMessage; onDelete?:
 
 function EmptyState({ onPick }: { onPick: (prompt: string) => void }) {
   const suggestions = [
-    "Explain quantum computing in simple terms",
-    "Write a haiku about a sunset over the ocean",
-    "Give me a 5-day itinerary for Bali",
-    "Help me debug a TypeScript error",
+    "Kasih jokes receh dong",
+    "Bagi tips tetap tenang",
+    "Cerita hal yang damai",
+    "Yuk ngobrol santai",
   ];
   return (
     <div className="flex flex-col items-center text-center">
@@ -538,9 +538,9 @@ function EmptyState({ onPick }: { onPick: (prompt: string) => void }) {
       >
         <Sparkles className="h-8 w-8" />
       </div>
-      <h2 className="text-2xl font-semibold tracking-tight">How can I help today?</h2>
+      <h2 className="text-2xl font-semibold tracking-tight">Halo, aku Senja.</h2>
       <p className="mt-2 max-w-md text-sm text-muted-foreground">
-        Ask anything, brainstorm ideas, or pick one of the suggestions below to get started.
+        Ada yang bisa kubantu hari ini Nana?
       </p>
       <div className="mt-8 grid w-full max-w-2xl grid-cols-1 gap-3 sm:grid-cols-2">
         {suggestions.map((s) => (
